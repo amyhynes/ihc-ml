@@ -16,3 +16,18 @@ https://docs.scipy.org/doc/scipy-0.16.1/reference/generated/scipy.signal.savgol_
 # Intensity thresholding
 
 # Size filter
+
+
+
+
+
+
+
+https://github.com/duducosmos/kPyWavelet/blob/master/kPyWavelet/twod.py
+
+https://scikit-image.org/docs/dev/api/skimage.filters.html
+    
+https://docs.astropy.org/en/stable/convolution/
+    
+https://pypi.org/project/pyimagej/
+    https://imagej.nih.gov/ij/plugins/mexican-hat/index.html
