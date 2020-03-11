@@ -145,3 +145,39 @@ import pywt
 >>> plt.show() # doctest: +SKIP
 
 
+
+
+#thresholding
+from skimage.filters import threshold_isodata, threshold_yen, threshold_otsu
+thresh_iso = threshold_isodata(bright_bayes)
+isodata = bright_bayes > thresh_iso
+
+thresh_yen = threshold_yen(bright_bayes)
+yen = bright_bayes > thresh_yen
+
+thresh_otsu = threshold_otsu(bright_bayes)
+otsu = bright_bayes > thresh_otsu
+
+fig, ax = plt.subplots(nrows=2, ncols=3, figsize=(24, 15),
+                       sharex=True, sharey=True)
+
+plt.gray()
+
+ax[0, 0].imshow(grayscale_bayes)
+ax[0, 0].set_title(
+    'Original'.format(psnr_bayes))
+ax[0, 1].imshow(bright_bayes)
+ax[0, 1].set_title(
+    'Bright'.format(psnr_bayes))
+ax[1, 0].imshow(isodata)
+ax[1, 0].set_title(
+    'Isodata'.format(psnr_bayes))
+ax[1, 1].imshow(yen)
+ax[1, 1].set_title(
+    'Yen'.format(psnr_bayes))
+ax[1,2].imshow(otsu)
+ax[1,2].set_title('Otsu')
+fig.tight_layout()
+
+plt.show()
+
