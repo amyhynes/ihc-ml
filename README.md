@@ -1,1 +1,1 @@
-COGS 444 Honours Research Project for McGill University.
+# COGS 444 Honours Research Project for McGill University
