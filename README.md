@@ -16,4 +16,4 @@ Random Forest | 71.13 | 74.75 | 82.22
 MLP (Neural Network) | 70.42 | 74.75 | 81.32
 AdaBoost | 71.83 | 75.76 | 82.42
 
-The decision tree model is packaged as a python script to which researchers can provide their Iba1 IHC images as input, and the program reports the positive cell count in an accurate and precise manner. The code is be available on in another [repository](https://github.com/amyhynes/HistologyCellCounter) with instructions on how to install the requirements and run the script.
+The decision tree model is packaged as a python script to which researchers can provide their Iba1 IHC images as input, and the program reports the positive cell count in an accurate and precise manner. This code is be available on in another [repository](https://github.com/amyhynes/HistologyCellCounter) with instructions on how to install the requirements and run the script.
